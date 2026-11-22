@@ -1,50 +1,66 @@
-# Car Price Predictor
+# Car Price Prediction
 
-Project link: https://car-price-price.herokuapp.com
-Demo Video: https://youtu.be/HEaFU68WAPM
+**Student Name:** Namrata Lakhe  
+**Roll Number:** AD3370
 
-<img src="https://github.com/rajtilakls2510/car_price_predictor/blob/master/demo.png">
+## Aim
 
+This project aims to predict the selling price of a used car based on its company, model, year of purchase, fuel type, and kilometers driven.
 
+## Project Description
 
-# Aim
+The Car Price Prediction System is a machine learning-based web application that estimates the price of a used car.
 
-This project aims to predict the Price of an used Car by taking it's Company name, it's Model name, Year of Purchase, and other parameters.
+The application takes the following inputs:
 
-<img src="https://github.com/rajtilakls2510/car_price_predictor/blob/master/predict.png">
+- Car Company
+- Car Model
+- Year of Purchase
+- Fuel Type
+- Kilometers Driven
 
-## How to use?
+Based on these details, the system predicts the estimated selling price of the car.
 
-1. Clone the repository
-2. Install the required packages in "requirements.txt" file.
+## Technologies Used
 
-Some packages are:
- - numpy 
- - pandas 
- - scikit-learn
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Flask
+- HTML
+- CSS
 
-3. Run the "application.py" file
-And you are good to go. 
+## Dataset
 
-# Description
+The project uses a used-car dataset originally sourced from Quikr.com. The dataset is cleaned and preprocessed before training the machine learning model.
 
-## What this project does?
+## Machine Learning Algorithm
 
-1. This project takes the parameters of an used car like: Company name, Model name, Year of Purchase, Fuel Type and Number of Kilometers it has been driven.
-2. It then predicts the possible price of the car. For example, the image below shows the predicted price of our Hyundai Grand i10. 
+**Linear Regression**
 
-<img src="https://github.com/rajtilakls2510/car_price_predictor/blob/master/predict.png">
+A Linear Regression model is trained to identify the relationship between car features and their selling prices.
 
-## How this project does?
+## Project Workflow
 
-1. First of all the data was scraped from Quikr.com (https://quikr.com) 
-Link for data: https://github.com/rajtilakls2510/car_price_predictor/blob/master/quikr_car.csv
+1. Dataset collection
+2. Data cleaning and preprocessing
+3. Exploratory Data Analysis
+4. Model training using Linear Regression
+5. Model evaluation
+6. Flask web application integration
+7. Used car price prediction
 
-2. The data was cleaned (it was super unclean :( ) and analysed.
+## How to Run the Project
 
-3. Then a Linear Regression model was built on top of it which had 0.92 R2_score.
+1. Clone the repository.
+2. Install the required packages:
 
-Link for notebook: https://github.com/rajtilakls2510/car_price_predictor/blob/master/Quikr%20Analysis.ipynb
+   `pip install -r requirements.txt`
 
-4. This project was given the form of an website built on Flask where we used the Linear Regression model to perform predictions.
+3. Run the application:
+
+   `python application.py`
+
+4. Open the local URL in your browser.
 
